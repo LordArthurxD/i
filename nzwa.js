@@ -118,8 +118,8 @@ const { limit } = require('./database/menu/limit')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:TIAGO\n' // full name
-            + 'ORG:Gostoso🌚;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=12603763944:+1 (260) 376-3944\n' // WhatsApp ID + phone number
+            + 'ORG:GostosoðŸŒš;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=5491153251742:+54 9 11 5325-1742\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 prefix = botPrefix
 blocked = []
@@ -355,7 +355,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Adios pedazo de aborto , espero que no vuelvas @${num.split('@')[0]}😴`
+				teks = `Adios pedazo de aborto , espero que no vuelvas @${num.split('@')[0]}ðŸ˜´`
 				let buff = await getBuffer(ppimg)
 				nzwa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -400,20 +400,20 @@ async function starts() {
                         
                         mess = {
                                 wait: 'En proceso, Aguarda',
-                                succsess: '✔️ Sucesso ✔️',
-                                levelon: '❬ ✔ ❭ *leveling esta activo*',
-                                levelnoton: `❬ X ❭  *desativar leveling*`,
-                                levelnol: '*NÍVEL DE IRMÃO AINDA* 0 °-°',
+                                succsess: 'âœ”ï¸ Sucesso âœ”ï¸',
+                                levelon: 'â¬ âœ” â­ *leveling esta activo*',
+                                levelnoton: `â¬ X â­  *desativar leveling*`,
+                                levelnol: '*NÃVEL DE IRMÃƒO AINDA* 0 Â°-Â°',
                                 error: {
-                                	    stick: '[❗] Fall�, se produjo un error al convertir la imagen en una pegatina ❌',
-                                        Iv: '❌ Link invalido ❌',
+                                	    stick: '[â—] Falló, se produjo un error al convertir la imagen en una pegatina âŒ',
+                                        Iv: 'âŒ Link invalido âŒ',
                                 },
                         	only: {
-                        	        group: '[❗] Este comando solo se puede usar en grupos! ❌',
-                                        ownerG: `[❗] �Este comando solo puede ser utilizado por el propietario del grupo! ❌`,
-                        	        admin: `[❗] JAJAJAJAJA, ESTAS INTENTANDOÉ UTILIZAR EL COMANDO DE ADMIN! ❌`,
-                                        Badmin: `[❗] Este comando solo se puede usar cuando el bot se convierte en administrador! ❌`,
-                                        daftarB: `NO ESTAS REGISTRADO 」──\nHola�!\n� a�n no te has registrado, registremos primero ... \n\nComando : ${prefix}registrar nombre|número\nExemplo : ${prefix}registrar Felixcrack|18`,
+                        	        group: '[â—] Este comando solo se puede usar en grupos! âŒ',
+                                        ownerG: `[â—] ¡Este comando solo puede ser utilizado por el propietario del grupo! âŒ`,
+                        	        admin: `[â—] JAJAJAJAJA, ESTAS INTENTANDOÃ‰ UTILIZAR EL COMANDO DE ADMIN! âŒ`,
+                                        Badmin: `[â—] Este comando solo se puede usar cuando el bot se convierte en administrador! âŒ`,
+                                        daftarB: `NO ESTAS REGISTRADO ã€â”€â”€\nHola¡!\nª aún no te has registrado, registremos primero ... \n\nComando : ${prefix}registrar nombre|nÃºmero\nExemplo : ${prefix}registrar Felixcrack|18`,
                                 }
                         }
                 	const apakah = ['Ya','Tidak']
@@ -469,7 +469,7 @@ async function starts() {
 		        }
                         //function rank 
 			const levelRole = getLevelingLevel(sender, _level)
-   	                var role = 'Estagiário'
+   	                var role = 'EstagiÃ¡rio'
    	                if (levelRole <= 3) {
    	                        role = 'senior trainee'
    	                } else if (levelRole <= 5) {
@@ -485,13 +485,13 @@ async function starts() {
    	                } else if (levelRole <= 11) {
    	                        role = 'sargento da equipe II'
    	                } else if (levelRole <= 12) {
-   	                        role = 'Sgt 1ª classe I'
+   	                        role = 'Sgt 1Âª classe I'
    	                } else if (levelRole <= 13) {
-   	                        role = 'Sgt 1ª classe II'
+   	                        role = 'Sgt 1Âª classe II'
    	                } else if (levelRole <= 14) {
-   	                        role = 'Sgt 1ª classe III'
+   	                        role = 'Sgt 1Âª classe III'
    	                } else if (levelRole <= 14) {
-   	                        role = 'Ggt 1ª classe IV'
+   	                        role = 'Ggt 1Âª classe IV'
    	                } else if (levelRole <= 15) {
    	                        role = 'Master sgt I'
    	                } else if (levelRole <= 16) {
@@ -503,13 +503,13 @@ async function starts() {
    	                } else if (levelRole <= 19) {
    	                        role = 'Master sgt V'
    	                } else if (levelRole <= 20) {
-   	                        role = '2º Ten I'
+   	                        role = '2Âº Ten I'
    	                } else if (levelRole <= 21) {
-   	                        role = '2º Ten II'
+   	                        role = '2Âº Ten II'
    	                } else if (levelRole <= 22) {
-   	                        role = '2º Ten III'
+   	                        role = '2Âº Ten III'
    	                } else if (levelRole <= 23) {
-   	                        role = '2º Ten IV'
+   	                        role = '2Âº Ten IV'
    	                }
 
 	                //function leveling
@@ -524,7 +524,7 @@ async function starts() {
                                         addLevelingXp(sender, amountXp)
                                         if (requiredXp <= getLevelingXp(sender)) {
                                         addLevelingLevel(sender, 1)
-                                        await reply(`*「 SUBIO DE NIVEL 」*\n\n❑ *Nombre*: ${sender}\n❑ *XP*: ${getLevelingXp(sender)}\n❑ *Nivel*: ${getLevel} -> ${getLevelingLevel(sender)}\n\nParabéns!! 🥳🎉`)
+                                        await reply(`*ã€Œ SUBIO DE NIVEL ã€*\n\nâ‘ *Nombre*: ${sender}\nâ‘ *XP*: ${getLevelingXp(sender)}\nâ‘ *Nivel*: ${getLevel} -> ${getLevelingLevel(sender)}\n\nParabÃ©ns!! ðŸ¥³ðŸŽ‰`)
                                 }
                         } catch (err) {
                                 console.error(err)
@@ -536,7 +536,7 @@ async function starts() {
                         for (let lmt of _limit) {
                                 if (lmt.id === sender) {
                                         limitCounts = limitawal - lmt.limit
-                                        if (limitCounts <= 0) return nzwa.sendMessage(from,`Seu limite de solicitação acabou\n\n_Note : O limite será redefinido a cada 21:00 horas!_`, text,{ quoted: mek})
+                                        if (limitCounts <= 0) return nzwa.sendMessage(from,`Seu limite de solicitaÃ§Ã£o acabou\n\n_Note : O limite serÃ¡ redefinido a cada 21:00 horas!_`, text,{ quoted: mek})
                                         nzwa.sendMessage(from, ind.limitcount(limitCounts), text, { quoted : mek})
                                         found = true
                                 }
@@ -619,11 +619,11 @@ async function starts() {
                 if (messagesC.includes("://chat.whatsapp.com/")){
 		        if (!isGroup) return
 		        if (!isAntiLink) return
-		        if (isGroupAdmins) return reply('porque eres un administrador de grupo, el bot no te eliminar�')
+		        if (isGroupAdmins) return reply('porque eres un administrador de grupo, el bot no te eliminará')
 		        nzwa.updatePresence(from, Presence.composing)
 		        if (messagesC.includes("#izinadmin")) return reply("#izinadmin recebido")
 		        var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		        reply(`Link de grupo detectado ${sender.split("@")[0]} � seras� expulsado del grupo en 5 segundos`)
+		        reply(`Link de grupo detectado ${sender.split("@")[0]} ª seras¡ expulsado del grupo en 5 segundos`)
 		        setTimeout( () => {
 			        nzwa.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		        }, 5000)
@@ -652,11 +652,11 @@ async function starts() {
 	            if (messagesC.includes("google.")){
 		        if (!isGroup) return
 		        if (!isAntiLink) return
-		        if (isGroupAdmins) return reply('porque eres un administrador de grupo, el bot no patear�-lo')
+		        if (isGroupAdmins) return reply('porque eres un administrador de grupo, el bot no pateará¡-lo')
 		        nzwa.updatePresence(from, Presence.composing)
 		        if (messagesC.includes("#izinadmin")) return reply("#izinadmin recebido")
 		        var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		        reply(`Link de grupo detectado ${sender.split("@")[0]} Você será expulso do grupo Em 5 segundos`)
+		        reply(`Link de grupo detectado ${sender.split("@")[0]} VocÃª serÃ¡ expulso do grupo Em 5 segundos`)
 		        setTimeout( () => {
 			        nzwa.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		        }, 5000)
@@ -685,11 +685,11 @@ async function starts() {
 	            if (messagesC.includes("https://")){
 		        if (!isGroup) return
 		        if (!isAntiLink) return
-		        if (isGroupAdmins) return reply('porque eres un administrador de grupo, los bots no patear�n-lo')
+		        if (isGroupAdmins) return reply('porque eres un administrador de grupo, los bots no patearán-lo')
 		        nzwa.updatePresence(from, Presence.composing)
 		        if (messagesC.includes("#izinadmin")) return reply("#izinadmin recebido")
 		        var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		        reply(`Link de grupo detectado ${sender.split("@")[0]} Você será expulso do grupo Em 5 segundos`)
+		        reply(`Link de grupo detectado ${sender.split("@")[0]} VocÃª serÃ¡ expulso do grupo Em 5 segundos`)
 		        setTimeout( () => {
 			        nzwa.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		        }, 5000)
@@ -718,11 +718,11 @@ async function starts() {
 	            if (messagesC.includes("www.")){
 		        if (!isGroup) return
 		        if (!isAntiLink) return
-		        if (isGroupAdmins) return reply('porque eres un administrador de grupo, los bots no patear�n�-lo')
+		        if (isGroupAdmins) return reply('porque eres un administrador de grupo, los bots no patearán¡-lo')
 		        nzwa.updatePresence(from, Presence.composing)
 		        if (messagesC.includes("#izinadmin")) return reply("#izinadmin recebido")
 		        var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		        reply(`Link de grupo detectado ${sender.split("@")[0]} � seras� expulsado del grupo en 5 segundos`)
+		        reply(`Link de grupo detectado ${sender.split("@")[0]} ª seras¡ expulsado del grupo en 5 segundos`)
 		        setTimeout( () => {
 			        nzwa.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		        }, 5000)
@@ -751,7 +751,7 @@ async function starts() {
 	          if (messagesC.includes("vete a la vrg")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		      if (isGroupAdmins) return reply('cara, nao fale essas coisas, Ã© errado, mas vc e admin n irei te banir')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -761,7 +761,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo 🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -777,14 +777,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo JAJAJAJ ADIOS otário 😔🤙")
+			reply("5 segundo JAJAJAJ ADIOS otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
 	          if (messagesC.includes("hijo de puta")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, est� mal, pero t� y el administrador no te prohibir�n')
+		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, está mal, pero tú y el administrador no te prohibirán')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -794,7 +794,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo 🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -810,14 +810,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo adi�s jajaja otário 😔🤙")
+			reply("5 segundo adiós jajaja otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
 	          if (messagesC.includes("puto")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, est� mal, pero t� y el administrador no te prohibir�n')
+		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, está mal, pero tú y el administrador no te prohibirán')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -827,7 +827,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -843,14 +843,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo adi�s jajaja otário 😔🤙")
+			reply("5 segundo adiós jajaja otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
 	          if (messagesC.includes("black")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, est� mal, pero t� y el administrador no te prohibir�n')
+		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, está mal, pero tú y el administrador no te prohibirán')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -860,7 +860,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo 🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -876,14 +876,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo adi�s jajaja otário 😔🤙")
+			reply("5 segundo adiós jajaja otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
 	          if (messagesC.includes("pito")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		      if (isGroupAdmins) return reply('cara, nao fale essas coisas, Ã© errado, mas vc e admin n irei te banir')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -893,7 +893,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -909,14 +909,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo adi�s jajaja otário 😔🤙")
+			reply("5 segundo adiós jajaja otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
 	          if (messagesC.includes("gay")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, est� mal, pero t� y el administrador no te prohibir�n')
+		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, está mal, pero tú y el administrador no te prohibirán')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -926,7 +926,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -942,14 +942,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo adi�s jajaja otário 😔🤙")
+			reply("5 segundo adiós jajaja otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
-	          if (messagesC.includes("🐒")){
+	          if (messagesC.includes("ðŸ’")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, est� mal, pero t� y el administrador no te prohibir�n')
+		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, está mal, pero tú y el administrador no te prohibirán')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -959,7 +959,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -975,14 +975,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo adi�s jajaja otário 😔🤙")
+			reply("5 segundo adiós jajaja otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
 	          if (messagesC.includes("culo")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, est� mal, pero t� y el administrador no te prohibir�n')
+		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, está mal, pero tú y el administrador no te prohibirán')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -992,7 +992,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -1008,14 +1008,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo adi�s jajaja otário 😔🤙")
+			reply("5 segundo adiós jajaja otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
 	          if (messagesC.includes("malparido")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, est� mal, pero t� y el administrador no te prohibir�n')
+		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, está mal, pero tú y el administrador no te prohibirán')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -1025,7 +1025,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -1041,14 +1041,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo adi�s jajaja otário 😔🤙")
+			reply("5 segundo adiós jajaja otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
-	          if (messagesC.includes("🐵")){
+	          if (messagesC.includes("ðŸµ")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, est� mal, pero t� y el administrador no te prohibir�n')
+		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, está mal, pero tú y el administrador no te prohibirán')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -1058,7 +1058,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -1074,14 +1074,14 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo adi�s jajaja otário 😔🤙")
+			reply("5 segundo adiós jajaja otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 	
 	          if (messagesC.includes("aborto")){
 		      if (!isGroup) return
 		      if (!isAntiRacismo) return
-		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, est� mal, pero t� y el administrador no te prohibir�n')
+		      if (isGroupAdmins) return reply('Oye tu, no digas estas cosas, está mal, pero tú y el administrador no te prohibirán')
 		      nzwa.updatePresence(from, Presence.composing)
 		      if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		      var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -1091,7 +1091,7 @@ async function starts() {
 		}, 5000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
-			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  🚶")
+			reply("En este grupo, no nos gusta el racismo, que esto sirva de ejemplo  ðŸš¶")
 		}, 4000)
 		setTimeout( () => {
 		    nzwa.updatePresence(from, Presence.composing)
@@ -1107,20 +1107,20 @@ async function starts() {
 		}, 1000)
 		setTimeout( () => {
 			nzwa.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
+			reply("5 segundo KKKKKKKK tchau otÃ¡rio ðŸ˜”ðŸ¤™")
 		}, 0)
 	}
 
  	   	if (isGroup && isBadWord) {
                         if (bad.includes(messagesC)) {
                                 if (!isGroupAdmins) {
-                                        return reply("JAGA UCAPAN DONG!! 😠")
+                                        return reply("JAGA UCAPAN DONG!! ðŸ˜ ")
                                         .then(() => nzwa.groupRemove(from, sender))
                                         .then(() => {
-                                                nzwa.sendMessage(from, `*「 ANTI BADWORD 」*\nKamu dikick karena berkata kasar!`, text ,{quoted: mek})
+                                                nzwa.sendMessage(from, `*ã€Œ ANTI BADWORD ã€*\nKamu dikick karena berkata kasar!`, text ,{quoted: mek})
                                         }).catch(() => nzwa.sendMessage(from, `Untung cya bukan admin, kalo admin udah cya kick!`, text , {quoted : mek}))
                                 } else {
-                                        return reply( "Tolong Jaga Ucapan Min 😇")
+                                        return reply( "Tolong Jaga Ucapan Min ðŸ˜‡")
                                 }
                         }
                 }
@@ -1287,8 +1287,8 @@ async function starts() {
                nzwa.sendMessage(from, virtex(prefix, sender), text, {quoted: mek})
                break
                case 'kodenegara':
-               case 'cdpaís':
-               case 'codicopaís':
+               case 'cdpaÃ­s':
+               case 'codicopaÃ­s':
                nzwa.sendMessage(from, negara(prefix, sender), text, {quoted: mek})
                break
 				case 'demote':
@@ -1296,7 +1296,7 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Virou Membro Comum🤡')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Virou Membro ComumðŸ¤¡')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = `Rebaixado com sucesso :\n`
@@ -1359,7 +1359,7 @@ async function starts() {
                                           } catch {
                                                   ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				          }
-                                          teks = `「 *SELF WHATSAPP* 」\n\n_Request by_ : *@${sender.split("@s.whatsapp.net")[0]}\n\nYour link WhatsApp : *wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*Or ( / )*\n*api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
+                                          teks = `ã€Œ *SELF WHATSAPP* ã€\n\n_Request by_ : *@${sender.split("@s.whatsapp.net")[0]}\n\nYour link WhatsApp : *wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*Or ( / )*\n*api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
                                           console.log('Getting WhatsApp Profile Image...')
                                           nzwa.sendMessage(from, ppimg, image, { quoted: mek, caption: teks, contextInfo: { "mentionedJid": [sender] } } )
 				          break
@@ -1368,7 +1368,7 @@ async function starts() {
                                 if (!isRegister) return reply(mess.only.daftarB)
                                 if (isLimit(sender)) return reply(ind.limitend(pusname))
 				data = await fetchJson(`http://mhankbarbars.herokuapp.com/api/randomquotes`)
-				ez = `*❑ Author :* ${data.author}\n*❑ Quotes :* ${data.quotes}`
+				ez = `*â‘ Author :* ${data.author}\n*â‘ Quotes :* ${data.quotes}`
 				reply(ez)
                                 await limitAdd(sender)
 				break
@@ -1391,7 +1391,7 @@ async function starts() {
                 case 'creator':
                 case 'dono':
                   nzwa.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-               nzwa.sendMessage(from, 'Número Do Meu Dono, Caso Tenha Alguma Dúvida Chama Ele, Só Não Flode🌚',MessageType.text, { quoted: mek} )
+               nzwa.sendMessage(from, 'NÃºmero Do Meu Dono, Caso Tenha Alguma DÃºvida Chama Ele, SÃ³ NÃ£o FlodeðŸŒš',MessageType.text, { quoted: mek} )
                 break
 	case 'hidetag':
                 nzwa.updatePresence(from, Presence.composing) 
@@ -1468,7 +1468,7 @@ async function starts() {
                 data = await fetchJson(`https://docs-jojo.herokuapp.com/api/infonomor?no=${body.slice(11)}`)
                 if (data.error) return reply(data.error)
                 if (data.result) return reply(data.result)
-                hasil = `â• âž¥ internasional : ${data.international}\nâ• âž¥ nomor : ${data.nomor}\nâ• âž¥ operator : ${data.op}`
+                hasil = `Ã¢â€¢Â Ã¢Å¾Â¥ internasional : ${data.international}\nÃ¢â€¢Â Ã¢Å¾Â¥ nomor : ${data.nomor}\nÃ¢â€¢Â Ã¢Å¾Â¥ operator : ${data.op}`
                 reply(hasil)
                 await limitAdd(sender)
                 break
@@ -1515,7 +1515,7 @@ async function starts() {
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://mhankbarbar.tech/api/yta?url=${args[0]}&apiKey=${BarBarKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `â *Title* : ${anu.title}\nâ *Filesize* : ${anu.filesize}\n\nTunggu Bentar Ya Kak, Audionya Lagi Di Kirim...`
+					teks = `Ã¢ÂÂ *Title* : ${anu.title}\nÃ¢ÂÂ *Filesize* : ${anu.filesize}\n\nTunggu Bentar Ya Kak, Audionya Lagi Di Kirim...`
 					thumb = await getBuffer(anu.thumb)
 					nzwa.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
@@ -1622,7 +1622,7 @@ async function starts() {
 					break
                    case 'chatlist':
 					nzwa.updatePresence(from, Presence.composing)  
-					teks = 'Esta é a lista de números de bate-papo :\n'
+					teks = 'Esta Ã© a lista de nÃºmeros de bate-papo :\n'
 					for (let all of totalchat) {
 						teks += `~> @${all}\n`
 					}
@@ -1666,16 +1666,16 @@ async function starts() {
                 break
 				case 'tts':
 				   nzwa.updatePresence(from, Presence.recording) 
-				   if (args.length < 1) return nzwa.sendMessage(from, 'Qual é o código da linguagem, tio?', text, {quoted: mek})
+				   if (args.length < 1) return nzwa.sendMessage(from, 'Qual Ã© o cÃ³digo da linguagem, tio?', text, {quoted: mek})
                                    if (!isRegister) return reply(mess.only.daftarB)
                                    if (isLimit(sender)) return reply(ind.limitend(pusname))
 					const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return nzwa.sendMessage(from, 'Cadê o texto tio', text, {quoted: mek})
+					if (args.length < 2) return nzwa.sendMessage(from, 'CadÃª o texto tio', text, {quoted: mek})
 					dtt = body.slice(8)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 600
-					? reply('A maior parte do texto é tio')
+					? reply('A maior parte do texto Ã© tio')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -1740,7 +1740,7 @@ async function starts() {
 					ri = JSON.parse(JSON.stringify(anu));
 					ze =  ri[Math.floor(Math.random() * ri.length)];
 					nye = await getBuffer(ze)
-					nzwa.sendMessage(from, nye, image, { caption: 'hoje eu tou comédiante', quoted: mek })
+					nzwa.sendMessage(from, nye, image, { caption: 'hoje eu tou comÃ©diante', quoted: mek })
 					await limitAdd(sender) 	
 					break
 				case 'memeindo':
@@ -1773,10 +1773,10 @@ async function starts() {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
-						teks += `🐊 @${mem.jid.split('@')[0]}\n`
+						teks += `ðŸŠ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('Mencion de todos\©'+teks+'🐊', members_id, true)
+					mentions('Mencion de todos\Â©'+teks+'ðŸŠ', members_id, true)
 					break
                 case 'tagall2':
                 case 'marcar2':
@@ -1787,10 +1787,10 @@ async function starts() {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
-						teks += `💥 ${mem.jid.split('@')[0]}\n`
+						teks += `ðŸ’¥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					nzwa.sendMessage(from, 'Mencion de todos\®'+teks+'╠➥', text, {quoted: mek})
+					nzwa.sendMessage(from, 'Mencion de todos\Â®'+teks+'â• âž¥', text, {quoted: mek})
 					break
                 case 'tagall3':
                 case 'marcar3':
@@ -1804,7 +1804,7 @@ async function starts() {
 						teks += ` https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					nzwa.sendMessage(from, 'Mencion de todos\©'+teks+'', text, {detectLinks: false, quoted: mek})
+					nzwa.sendMessage(from, 'Mencion de todos\Â©'+teks+'', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
                         case 'marcar4':
@@ -1815,10 +1815,10 @@ async function starts() {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
-						teks += `👤 ${mem.jid.split('@')[0]}@c.us\n`
+						teks += `ðŸ‘¤ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					nzwa.sendMessage(from, 'Mencion de todos\®'+teks+'👤', text, {quoted: mek})
+					nzwa.sendMessage(from, 'Mencion de todos\Â®'+teks+'ðŸ‘¤', text, {quoted: mek})
 					break
                 case 'tagall5':
                 case 'marcar5':
@@ -1832,7 +1832,7 @@ async function starts() {
 						teks += ` ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('Mencionei.Tudo\©'+teks+'')
+					reply('Mencionei.Tudo\Â©'+teks+'')
 					break
 				case 'send':
 					var pc = body.slice(6)
@@ -1866,14 +1866,14 @@ async function starts() {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await nzwa.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							nzwa.sendMessage(_.jid, buff, image, {caption: `*「 TRANSMISI�N 」*\n\n${body.slice(4)}`})
+							nzwa.sendMessage(_.jid, buff, image, {caption: `*ã€Œ TRANSMISIÓN ã€*\n\n${body.slice(4)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 TRANSMISSÃO 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*ã€Œ TRANSMISSÃƒO ã€*\n\n${body.slice(4)}`)
 						}
-						reply('Transmisi�n realizada con �xito ')
+						reply('Transmisión realizada con éxito ')
 					}
 					break
 					case 'bcgc':
@@ -1884,14 +1884,14 @@ async function starts() {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await nzwa.downloadMediaMessage(encmedia)
 						for (let _ of groupMembers) {
-							nzwa.sendMessage(_.jid, buff, image, {caption: `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`})
+							nzwa.sendMessage(_.jid, buff, image, {caption: `*ã€Œ BC GROUP ã€*\n*Group* : ${groupName}\n\n${body.slice(6)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of groupMembers) {
-							sendMess(_.jid, `*「 TRANSMISI�N DE GRUPO 」*\n*Grupo* : ${groupName}\n\n${body.slice(6)}`)
+							sendMess(_.jid, `*ã€Œ TRANSMISIÓN DE GRUPO ã€*\n*Grupo* : ${groupName}\n\n${body.slice(6)}`)
 						}
-						reply('Transmisi�n exitosa al grupo')
+						reply('Transmisión exitosa al grupo')
 					}
 					break
 				case 'alay':
@@ -1933,7 +1933,7 @@ async function starts() {
 					}, 2000)
                      setTimeout( () => {
 					nzwa.updatePresence(from, Presence.composing) 
-					nzwa.sendMessage(from, 'Admin Não Me Quis No Grupo', text) // ur cods
+					nzwa.sendMessage(from, 'Admin NÃ£o Me Quis No Grupo', text) // ur cods
 					}, 0)
                      break
 
@@ -1961,7 +1961,7 @@ async function starts() {
                                         vide = body.slice(9)
                                         hmm = await fetchJson(`https://videfikri.com/api/igstalk/?username=${vide}`)
                                         buffer = await getBuffer(hmm.result.profile_hd)
-                                        hasil = `Nome de usuário : ${hmm.result.username}\nNome Completo : ${hmm.result.full_name}\nSeguidores : ${hmm.result.followers}\nSeguindo : ${hmm.result.following}\nPrivado : ${hmm.result.is_private}\nVerificado : ${hmm.result.is_verified}\nbio : ${hmm.result.bio}\nContagem de publicações : ${hmm.result.post_count}\nUrl Externo : ${hmm.result.external_url}\nFbId : ${hmm.result.fbid}\nMostrar perfil sugerido : ${hmm.result.show_suggested_profile}`
+                                        hasil = `Nome de usuÃ¡rio : ${hmm.result.username}\nNome Completo : ${hmm.result.full_name}\nSeguidores : ${hmm.result.followers}\nSeguindo : ${hmm.result.following}\nPrivado : ${hmm.result.is_private}\nVerificado : ${hmm.result.is_verified}\nbio : ${hmm.result.bio}\nContagem de publicaÃ§Ãµes : ${hmm.result.post_count}\nUrl Externo : ${hmm.result.external_url}\nFbId : ${hmm.result.fbid}\nMostrar perfil sugerido : ${hmm.result.show_suggested_profile}`
                                         nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
                                         await limitAdd(sender)
                                         break
@@ -2003,14 +2003,14 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('Quem você deseja adicionar um gênio??')
-					if (args[0].startsWith('08')) return reply('Use o código do país, mas')
+					if (args.length < 1) return reply('Quem vocÃª deseja adicionar um gÃªnio??')
+					if (args[0].startsWith('08')) return reply('Use o cÃ³digo do paÃ­s, mas')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						nzwa.groupAdd(from, [num])
 					} catch (e) {
 						console.log('Error :', e)
-						reply('Falha ao adicionar destino, talvez porque é privado')
+						reply('Falha ao adicionar destino, talvez porque Ã© privado')
 					}
 					break
 
@@ -2020,7 +2020,7 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('marca o safado(a) que você quer chutar!')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('marca o safado(a) que vocÃª quer chutar!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = 'Pedidos recebidos, emitidos :\n'
@@ -2032,7 +2032,7 @@ async function starts() {
 					} else {
 						mentions(`Pedidos recebidos, emitidos : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						nzwa.groupRemove(from, mentioned)
-					nzwa.sendMessage(mentioned, '😘', text)
+					nzwa.sendMessage(mentioned, 'ðŸ˜˜', text)
 					}
 					break
 				case 'exe':
@@ -2199,7 +2199,7 @@ async function starts() {
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`âŒ Gagal, pada saat mengkonversi ${tipe} ke stiker`)
+								reply(`Ã¢ÂÅ’ Gagal, pada saat mengkonversi ${tipe} ke stiker`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -2232,14 +2232,14 @@ async function starts() {
 				case 'toimg':
 				    nzwa.updatePresence(from, Presence.composing)
                                     if (!isRegister) return reply(mess.only.daftarB)
-					if (!isQuotedSticker) return reply('âŒ reply stickernya um âŒ')
+					if (!isQuotedSticker) return reply('Ã¢ÂÅ’ reply stickernya um Ã¢ÂÅ’')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await nzwa.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.png')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('âŒ Gagal, pada saat mengkonversi sticker ke gambar âŒ')
+						if (err) return reply('Ã¢ÂÅ’ Gagal, pada saat mengkonversi sticker ke gambar Ã¢ÂÅ’')
 						buffer = fs.readFileSync(ran)
 						nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: '>//<'})
 						fs.unlinkSync(ran)
@@ -2248,14 +2248,14 @@ async function starts() {
                 	case 'tomp3':
                 	nzwa.updatePresence(from, Presence.composing) 
                         if (!isRegister) return reply(mess.only.daftarB)
-					if (!isQuotedVideo) return reply('âŒ reply videonya um âŒ')
+					if (!isQuotedVideo) return reply('Ã¢ÂÅ’ reply videonya um Ã¢ÂÅ’')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await nzwa.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp4')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('âŒ Gagal, pada saat mengkonversi video ke mp3 âŒ')
+						if (err) return reply('Ã¢ÂÅ’ Gagal, pada saat mengkonversi video ke mp3 Ã¢ÂÅ’')
 						buffer = fs.readFileSync(ran)
 						nzwa.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', quoted: mek})
 						fs.unlinkSync(ran)
@@ -2282,7 +2282,7 @@ async function starts() {
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
                if (anu.error) return reply(anu.error)
-                 infomp3 = `*Música encontrada!!!*\nTitulo : ${anu.result.title}\nFonte : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*Estou Baixando Sua Música, Enquanto Isso Me Segue No Insta @tiago.lve😴*`
+                 infomp3 = `*MÃºsica encontrada!!!*\nTitulo : ${anu.result.title}\nFonte : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*Estou Baixando Sua MÃºsica, Enquanto Isso Me Segue No Insta @tiago.lveðŸ˜´*`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -2303,7 +2303,7 @@ async function starts() {
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
                                         if (!isUser) return reply(mess.only.daftarB)
 					setTimeout( () => {
-					nzwa.sendMessage(from, '*❑ Jawaban :* '+anu.result.jawaban+'\n'+anu.result.desk, text, {quoted: mek}) // ur cods
+					nzwa.sendMessage(from, '*â‘ Jawaban :* '+anu.result.jawaban+'\n'+anu.result.desk, text, {quoted: mek}) // ur cods
 					}, 30000) // 1000 = 1s,
 					setTimeout( () => {
 					nzwa.sendMessage(from, '_10 Detik lagi_', text) // ur cods
@@ -2326,14 +2326,14 @@ async function starts() {
 					if (!isGroupAdmins) return reply(mess.only.Badmin)
 					if (args.length < 1) return reply('digite 1 para ativar')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('o recurso está ativo')
+						if (isWelkom) return reply('o recurso estÃ¡ ativo')
 						welkom.push(from)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(welkom))
-						reply('SUCESSO Ha habilitado la funci�n de bienvenida en este grupo')
+						reply('SUCESSO Ha habilitado la función de bienvenida en este grupo')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, disable)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(welkom))
-						reply('SUCESSO Has desactivado la funci�n de bienvenida en este grupo.')
+						reply('SUCESSO Has desactivado la función de bienvenida en este grupo.')
 					} else {
 						reply('digite 1 para ativar, 0 para desativar o recurso')
 					}
@@ -2403,7 +2403,7 @@ async function starts() {
 					break
                                 case 'nsfwneko':
 				    try{
-						if (!isNsfw) return reply('*NSFW ESTÁ DESLIGADO*')
+						if (!isNsfw) return reply('*NSFW ESTÃ DESLIGADO*')
                                                 if (!isRegister) return reply(mess.only.daftarB)
                                                 if (isLimit(sender)) return reply(ind.limitend(pusname))
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=BotWeA`, {method: 'get'})
@@ -2446,16 +2446,16 @@ async function starts() {
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('digite 1 para ativar')
 					if (Number(args[0]) === 1) {
-						if (isNsfw) return reply('el recurso esta� activo')
+						if (isNsfw) return reply('el recurso esta¡ activo')
 						nsfw.push(from)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply('SUCESSO habilitar la funci�n nsfw en este grupo')
+						reply('SUCESSO habilitar la función nsfw en este grupo')
 					} else if (Number(args[0]) === 0) {
 						nsfw.splice(from, 1)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply('SUCESSO desactivado la funci�n nsfw en este grupo')
+						reply('SUCESSO desactivado la función nsfw en este grupo')
 					} else {
-						reply('escriba 1 para habilitar, 0 para deshabilitar la funci�n')
+						reply('escriba 1 para habilitar, 0 para deshabilitar la función')
 					}
 					break	
 				case 'quotes2':
@@ -2677,7 +2677,7 @@ async function starts() {
 					nzwa.sendMessage(from, truteh, image, { caption: '*Truth*\n\n'+ ttrth, quoted: mek })
 					break
                                 case 'dare':
-					const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "Ã°Å¸Â¦â€žÃ°Å¸â€™Â¨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
+					const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "ÃƒÂ°Ã…Â¸Ã‚Â¦Ã¢â‚¬Å¾ÃƒÂ°Ã…Â¸Ã¢â‚¬â„¢Ã‚Â¨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
 					const der = dare[Math.floor(Math.random() * dare.length)]
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					nzwa.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
@@ -2689,7 +2689,7 @@ async function starts() {
                 const userXp = getLevelingXp(sender)
                 if (userLevel === undefined && userXp === undefined) return reply(mess.levelnol)
                 sem = sender.replace('@s.whatsapp.net','')
-                resul = `◪ *NÍVEL*\n  ├❑ *Nome* : ${sem}\n  ├❑ *Xp Do Usuário* : ${userXp}\n  └❑ *Nível Do Usuário* : ${userLevel}`
+                resul = `â—ª *NÃVEL*\n  â”œâ‘ *Nome* : ${sem}\n  â”œâ‘ *Xp Do UsuÃ¡rio* : ${userXp}\n  â””â‘ *NÃ­vel Do UsuÃ¡rio* : ${userLevel}`
                nzwa.sendMessage(from, resul, text, { quoted: mek})
                 .catch(async (err) => {
                         console.error(err)
@@ -2710,7 +2710,7 @@ async function starts() {
                 if (!isGroupAdmins) return reply(mess.only.admin)
                 if (args.length < 1) return reply('Digite 1 para ativar o recurso')
                 if (args[0] === '1') {
-                    if (isLevelingOn) return reply('*o recurso de nível já estava ativo antes*')
+                    if (isLevelingOn) return reply('*o recurso de nÃ­vel jÃ¡ estava ativo antes*')
                     _leveling.push(groupId)
                     fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
                      reply(mess.levelon)
@@ -2733,7 +2733,7 @@ async function starts() {
                                         break
                                 case 'nsfwtrap':
                                         try{
-                                                if (!isNsfw) return reply('âŒ *NSFW MATI* âŒ')
+                                                if (!isNsfw) return reply('Ã¢ÂÅ’ *NSFW MATI* Ã¢ÂÅ’')
                                                 if (!isRegister) return reply(mess.only.daftarB)
                                                 if (isLimit(sender)) return reply(ind.limitend(pusname))
                                                 res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
@@ -2742,7 +2742,7 @@ async function starts() {
                                                 await limitAdd(sender)
                                         } catch (e) {
                                                 console.log(`*Error* :`, color(e,'red'))
-                                                reply('âŒ *ERROR* âŒ')
+                                                reply('Ã¢ÂÅ’ *ERROR* Ã¢ÂÅ’')
                                         }
                                         break
                                 case 'ping':    
@@ -2795,7 +2795,7 @@ async function starts() {
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (args.length < 1) return reply('Daerahnya dimana kak?')
                                         anu = await fetchJson(`https://mhankbarbar.tech/api/jadwalshalat?daerah=${loc}&apiKey=${BarBarKey}`, {method: 'get'})
-                                        mbteks = `◪ *JAM SHALAT* \n  │\n  ├❑ Daerah : ${loc} \n  ├❑ Ashar : ${anu.Ashar} \n  ├❑ Dhuha : ${anu.Dhuha} \n  ├❑ Dzuhur : ${anu.Dzuhur} \n  ├❑ Imsyak : ${anu.Imsyak} \n  ├❑ Isya : ${anu.Isya} \n  ├❑ Maghrib : ${anu.Maghrib} \n  └❑ Subuh : ${anu.Subuh}`
+                                        mbteks = `â—ª *JAM SHALAT* \n  â”‚\n  â”œâ‘ Daerah : ${loc} \n  â”œâ‘ Ashar : ${anu.Ashar} \n  â”œâ‘ Dhuha : ${anu.Dhuha} \n  â”œâ‘ Dzuhur : ${anu.Dzuhur} \n  â”œâ‘ Imsyak : ${anu.Imsyak} \n  â”œâ‘ Isya : ${anu.Isya} \n  â”œâ‘ Maghrib : ${anu.Maghrib} \n  â””â‘ Subuh : ${anu.Subuh}`
                                         nzwa.sendMessage(from, mbteks, text)
                                         break
                                 case 'jokerlogo':
@@ -2818,11 +2818,11 @@ async function starts() {
 					break*/
                                 case 'afk':
                                         tels = body.slice(4)
-                                        if (args.length < 1) return reply('irmão, por causa de que?')
+                                        if (args.length < 1) return reply('irmÃ£o, por causa de que?')
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         var nom = mek.participant
                                         const tag = {
-                                                text: `@${nom.split("@s.whatsapp.net")[0]} *MEDIUM AFK ${tels} NÃO PERTURBE SIM*`,
+                                                text: `@${nom.split("@s.whatsapp.net")[0]} *MEDIUM AFK ${tels} NÃƒO PERTURBE SIM*`,
                                                 contextInfo: { mentionedJid: [nom] }
                                         }
                                         nzwa.sendMessage(from, tag, text, {quoted: mek})
@@ -3021,34 +3021,34 @@ async function starts() {
                                         await limitAdd(sender)
 					break
                                 case 'clearall':
-					if (!isOwner) return reply('Quien � eres?')
+					if (!isOwner) return reply('Quien © eres?')
 					anu = await nzwa.chats.all()
 					nzwa.setMaxListeners(25)
 					for (let _ of anu) {
 						nzwa.deleteChat(_.jid)
 					}
-					reply('Eliminar todos los chats con �xito :)')
+					reply('Eliminar todos los chats con éxito :)')
 					break
 				case 'simi':
 					if (args.length < 1) return reply('El texto es donde umh??')
 					teks = body.slice(5)
 					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
-					//if (anu.error) return reply('Simi não sabe mana')
+					//if (anu.error) return reply('Simi nÃ£o sabe mana')
 					reply(anu)
 					break
 				case 'simih':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('escriba 1 para activar la funci�n')
+					if (args.length < 1) return reply('escriba 1 para activar la función')
 					if (Number(args[0]) === 1) {
-						if (isSimi) return reply('O modo Simi está ativado')
+						if (isSimi) return reply('O modo Simi estÃ¡ ativado')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Modo simi activado con �xito en este grupo')
+						reply('Modo simi activado con éxito en este grupo')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Desactivar el modo simi con �xito en este grupo')
+						reply('Desactivar el modo simi con éxito en este grupo')
 					} else {
 						reply('1 para activar, 0 para desactivar')
 					}
@@ -3064,9 +3064,9 @@ async function starts() {
 						pp = await nzwa.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						nzwa.updateProfilePicture(botNumber, buffer)
-						mentions(`La foto de perfil se actualiz� correctamente con la foto de perfil @${id.split('@')[0]}`, [jid], true)
+						mentions(`La foto de perfil se actualizó correctamente con la foto de perfil @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
-						reply('FOLLADO TIPO, �TIENES UNA MEJOR FOTO ALL�? Feo bixo')
+						reply('FOLLADO TIPO, ¿TIENES UNA MEJOR FOTO ALLÍ? Feo bixo')
 					}
 					break
                                 case 'pubglogo':
@@ -3123,16 +3123,16 @@ async function starts() {
                                         break
                                 case 'buylimit':
                                 case 'comprarl':
-                                        if (args.length < 1) return reply('Qual é o limite que você quer comprar, mana? Certifique-se de ter dinheiro suficiente, mano! \n\nComo verificar dinheiro: ${prefix}saldo')
+                                        if (args.length < 1) return reply('Qual Ã© o limite que vocÃª quer comprar, mana? Certifique-se de ter dinheiro suficiente, mano! \n\nComo verificar dinheiro: ${prefix}saldo')
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         payout = body.slice(10)
                                         const koinPerlimit = 1000
                                         const total = koinPerlimit * payout
-                                        if ( checkATMuser(sender) <= total) return reply(`desculpe, seu dinheiro não é suficiente. por favor colete e compre mais tarde`)
+                                        if ( checkATMuser(sender) <= total) return reply(`desculpe, seu dinheiro nÃ£o Ã© suficiente. por favor colete e compre mais tarde`)
                                         if ( checkATMuser(sender) >= total ) {
                                                 confirmATM(sender, total)
                                                 bayarLimit(sender, payout)
-                                                await reply(`*「 PAGAMENTO DE SUCESSO 」*\n\n*remetente* : Admin\n*receptor* : ${pushname}\n*compra nominal* : ${payout} \n *preço do limite* : ${koinPerlimit}/limit\n *o resto do seu dinheiro* : ${checkATMuser(sender)}\n\nprocesso bem sucedido com número de pagamento \n${createSerial(15)}`)
+                                                await reply(`*ã€Œ PAGAMENTO DE SUCESSO ã€*\n\n*remetente* : Admin\n*receptor* : ${pushname}\n*compra nominal* : ${payout} \n *preÃ§o do limite* : ${koinPerlimit}/limit\n *o resto do seu dinheiro* : ${checkATMuser(sender)}\n\nprocesso bem sucedido com nÃºmero de pagamento \n${createSerial(15)}`)
                                         }
                                         break
                                 case 'limit':
@@ -3149,11 +3149,11 @@ async function starts() {
                                                 if (isEventon) return reply('*SUDAH AKTIF* !!!')
                                                 event.push(from)
                                                 fs.writeFileSync('./database/json/event.json', JSON.stringify(event))
-                                                reply('*「 SUCCSESS 」 Mengaktifkan EVENT di group ini*')
+                                                reply('*ã€Œ SUCCSESS ã€ Mengaktifkan EVENT di group ini*')
                                         } else if (Number(args[0]) === 0) {
                                                 event.splice(from, 1)
                                                 fs.writeFileSync('./database/json/event.json', JSON.stringify(event))
-                                                reply('*「 SUCCSESS 」 Menonaktifkan EVENT di group ini*')
+                                                reply('*ã€Œ SUCCSESS ã€ Menonaktifkan EVENT di group ini*')
                                         } else {
                                                 reply(ind.satukos())
                                         }
@@ -3167,10 +3167,10 @@ async function starts() {
                                         const namaUser = q.substring(0, q.indexOf('|') - 0)
                                         const umurUser = q.substring(q.lastIndexOf('|') + 1)
                                         const serialUser = createSerial(20)
-                                        if(isNaN(umurUser)) return await reply('A idade deve ser um número!!')
-                                        if (namaUser.length >= 30) return reply(`por que seu nome é tão longo é um nome ou um trem`)
-                                        if (umurUser > 40) return reply(`sua idade é muito velha no máximo 40 anos`)
-                                        if (umurUser < 12) return reply(`sua idade é muito jovem, mínimo 12 anos`)
+                                        if(isNaN(umurUser)) return await reply('A idade deve ser um nÃºmero!!')
+                                        if (namaUser.length >= 30) return reply(`por que seu nome Ã© tÃ£o longo Ã© um nome ou um trem`)
+                                        if (umurUser > 40) return reply(`sua idade Ã© muito velha no mÃ¡ximo 40 anos`)
+                                        if (umurUser < 12) return reply(`sua idade Ã© muito jovem, mÃ­nimo 12 anos`)
                                         veri = sender
                                         if (isGroup) {
                                                 addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
@@ -3214,7 +3214,7 @@ async function starts() {
 			                if (!isGroupAdmins) return reply(mess.only.admin)
 			         	if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                                         nzwa.groupUpdateDescription(from, `${body.slice(9)}`)
-                                        nzwa.sendMessage(from, 'Sucesso, descrição do grupo de mudança', text, {quoted: mek})
+                                        nzwa.sendMessage(from, 'Sucesso, descriÃ§Ã£o do grupo de mudanÃ§a', text, {quoted: mek})
 					break*/
                                 case 'translate':
                                         aruga = body.slice(10)
@@ -3225,7 +3225,7 @@ async function starts() {
                                         if (args.length < 2) return reply(`teksnya mana kak?\nContoh: ${prefix}translate en| Hai, aku Nazwa`)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
                                         anu = await fetchJson(`https://arugaz.my.id/api/edu/translate?lang=${lang}&text=${teksnya}`, {method: 'get'})
-                                        arteks = `◪ *TRANSLATE* \n  │\n  ├❑ Text : ${teksnya} \n  ├❑ Translate : ${anu.text} \n  └❑ *Pronunciation* : ${anu.pronunciation}`
+                                        arteks = `â—ª *TRANSLATE* \n  â”‚\n  â”œâ‘ Text : ${teksnya} \n  â”œâ‘ Translate : ${anu.text} \n  â””â‘ *Pronunciation* : ${anu.pronunciation}`
                                         nzwa.sendMessage(from, arteks, text)
                                         await limitAdd(sender)
                                         break
@@ -3254,7 +3254,7 @@ async function starts() {
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
                                         anu = await fetchJson(`https://mnazria.herokuapp.com/api/check?ip=${ipnya}`, {method: 'get'})
                                         lang = anu.location.languages[0]
-                                        teks = `◪ *IP* \n  │\n  ├❑ IP : ${anu.ip} \n  ├❑ City : ${anu.city} \n  ├❑ Continent Code : ${anu.continent_code} \n  ├❑ Continent Name : ${anu.continent_name} \n  ├❑ Country Code : ${anu.country_code} \n  ├❑ Country Name : ${anu.country_name} \n  ├❑ Latitude : ${anu.latitude} \n  ├❑ Calling Code : ${anu.location.calling_code} \n  ├❑ Capital : ${anu.location.capital} \n  ├❑ Country Flag : ${anu.location.country_flag} \n  ├❑ Country Flag Emoji : ${anu.location.country_flag_emoji} \n  ├❑ Country Flag Emoji Unicode : ${anu.location.country_flag_emoji_unicode} \n  ├❑ Geoname ID : ${anu.location.geoname_id} \n  ├❑ Languages : ${lang.code} , ${lang.name} , ${lang.native} \n  ├❑ Longitude : ${anu.longitude} \n  ├❑ Region Code : ${anu.region_code} \n  ├❑ Region Name : ${anu.region_name} \n  ├❑ Type : ${anu.type} \n  └❑ Zip : ${anu.zip} `
+                                        teks = `â—ª *IP* \n  â”‚\n  â”œâ‘ IP : ${anu.ip} \n  â”œâ‘ City : ${anu.city} \n  â”œâ‘ Continent Code : ${anu.continent_code} \n  â”œâ‘ Continent Name : ${anu.continent_name} \n  â”œâ‘ Country Code : ${anu.country_code} \n  â”œâ‘ Country Name : ${anu.country_name} \n  â”œâ‘ Latitude : ${anu.latitude} \n  â”œâ‘ Calling Code : ${anu.location.calling_code} \n  â”œâ‘ Capital : ${anu.location.capital} \n  â”œâ‘ Country Flag : ${anu.location.country_flag} \n  â”œâ‘ Country Flag Emoji : ${anu.location.country_flag_emoji} \n  â”œâ‘ Country Flag Emoji Unicode : ${anu.location.country_flag_emoji_unicode} \n  â”œâ‘ Geoname ID : ${anu.location.geoname_id} \n  â”œâ‘ Languages : ${lang.code} , ${lang.name} , ${lang.native} \n  â”œâ‘ Longitude : ${anu.longitude} \n  â”œâ‘ Region Code : ${anu.region_code} \n  â”œâ‘ Region Name : ${anu.region_name} \n  â”œâ‘ Type : ${anu.type} \n  â””â‘ Zip : ${anu.zip} `
                                         nzwa.sendMessage(from, teks, text)
                                         await limitAdd(sender)
                                         break
@@ -3266,7 +3266,7 @@ async function starts() {
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${toby}&apikey=BotWeA`, {method: 'get'})
                                         hepi = anu.result[0]
                                         buffer = await getBuffer(hepi.image)
-                                        teks = `◪ *HAPPY MOD* \n  │\n  ├❑ Titulo : ${hepi.title} \n  ├❑ Tamanho : ${hepi.size} \n  ├❑ Versão : ${hepi.version} \n  ├❑ Root : ${hepi.root} \n  ├❑ Compra : ${hepi.purchase} \n  ├❑ Preço : ${hepi.price} \n  ├❑ Link : ${hepi.link} \n  └❑ Download : ${hepi.download} `
+                                        teks = `â—ª *HAPPY MOD* \n  â”‚\n  â”œâ‘ Titulo : ${hepi.title} \n  â”œâ‘ Tamanho : ${hepi.size} \n  â”œâ‘ VersÃ£o : ${hepi.version} \n  â”œâ‘ Root : ${hepi.root} \n  â”œâ‘ Compra : ${hepi.purchase} \n  â”œâ‘ PreÃ§o : ${hepi.price} \n  â”œâ‘ Link : ${hepi.link} \n  â””â‘ Download : ${hepi.download} `
                                         nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: teks})
                                         await limitAdd(sender)
                                         break
@@ -3276,7 +3276,7 @@ async function starts() {
                                         if (args.length < 1) return reply(`Channel TV nya apa kak? \nContoh: ${prefix}jadwalTV mnctv`)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
                                         anu = await fetchJson(`https://mhankbarbar.tech/api/jdtv?ch=${mb}&apiKey=${BarBarKey}`, {method: 'get'})
-                                        teks = `◪ *JADWAL TV* \n  │\n  └❑ Channel : ${mb} \n◪ *JADWAL* \n${anu.result} `
+                                        teks = `â—ª *JADWAL TV* \n  â”‚\n  â””â‘ Channel : ${mb} \nâ—ª *JADWAL* \n${anu.result} `
                                         nzwa.sendMessage(from, teks, text)
                                         await limitAdd(sender)
                                         break
@@ -3294,17 +3294,17 @@ async function starts() {
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (args.length < 1) return reply('escriba 1 para activar')
 					if (Number(args[0]) === 1) {
-						if (isAntiLink) return reply('anti-link est� activo')
+						if (isAntiLink) return reply('anti-link está activo')
 						antilink.push(from)
 						fs.writeFileSync('./database/json/antilink.json', JSON.stringify(antilink))
-						reply('anti-link activado con �xito en este grupo ✔️')
-						nzwa.sendMessage(from,`Atenci�n a todos los miembros activos del grupo anti-enlace cuando env�es el enlace del grupo ser�s expulsado del grupo.`, text)
+						reply('anti-link activado con éxito en este grupo âœ”ï¸')
+						nzwa.sendMessage(from,`Atención a todos los miembros activos del grupo anti-enlace cuando envíes el enlace del grupo serás expulsado del grupo.`, text)
 					} else if (Number(args[0]) === 0) {
 						if (!isantilink) return reply('El modo de grupo anti-enlace ha sido deshabilitado')
 						var ini = anti.indexOf(from)
 						antilink.splice(ini, 1)
 						fs.writeFileSync('./database/json/antilink.json', JSON.stringify(antilink))
-						reply('Anti-link desactivado con �xito en este grupo ✔️')
+						reply('Anti-link desactivado con éxito en este grupo âœ”ï¸')
 					} else {
 						reply('1 para activar, 0 para desactivar')
 					}
@@ -3315,14 +3315,14 @@ async function starts() {
 					if (!isBotGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if ((args[0]) === 'on') {
-						if (isAntiRacismo) return reply('El modo antirracismo ya est� activo')
+						if (isAntiRacismo) return reply('El modo antirracismo ya está activo')
 						antiracismo.push(from)
 						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
-						reply(`\`\`\`✓Activ� con �xito el modo antirracismo en el grupo \`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`âœ“Activó con éxito el modo antirracismo en el grupo \`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						antiracismo.splice(from, 1)
 						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
-						reply(`\`\`\`✓Modo antiracismo desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`âœ“Modo antiracismo desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('On para activar, Off para desactivar')
 					}
@@ -3332,14 +3332,14 @@ async function starts() {
 				        bo = args[0]
 				        _level.sort((a, b) => (a.xp < b.xp) ? 1 : -1)
 			         	uang.sort((a, b) => (a.uang < b.uang) ? 1 : -1)
-                                        let leaderboardlvl = '「 *LEADERBOARD LEVEL* 」\n\n'
-                                        let leaderboarduang = '「 *SALDO DO QUADRO DE LIDERANÇA* 」\n\n'
+                                        let leaderboardlvl = 'ã€Œ *LEADERBOARD LEVEL* ã€\n\n'
+                                        let leaderboarduang = 'ã€Œ *SALDO DO QUADRO DE LIDERANÃ‡A* ã€\n\n'
                                         nom = 0
                                         try {
                                                 for (let i = 0; i < 10; i++) {
                                                         nom++
-                                                        leaderboardlvl += `◪ *「${nom}」*\n  ├❑ wa.me/${_level[i].jid.replace('@s.whatsapp.net', '')}\n  ├❑ *XP*: ${_level[i].xp}\n  └❑ *Nivel*: ${_level[i].level}\n`
-                                                        leaderboarduang += `◪ *「${nom}」*\n\n  ├❑ *Número* : wa.me/${uang[i].id.replace('@s.whatsapp.net', '')}\n  ├❑ *Equilíbrio*: _Rp${uang[i].uang}_\n  └❑ *Limite*: ${limitawal - _limit[i].limit}\n`
+                                                        leaderboardlvl += `â—ª *ã€Œ${nom}ã€*\n  â”œâ‘ wa.me/${_level[i].jid.replace('@s.whatsapp.net', '')}\n  â”œâ‘ *XP*: ${_level[i].xp}\n  â””â‘ *Nivel*: ${_level[i].level}\n`
+                                                        leaderboarduang += `â—ª *ã€Œ${nom}ã€*\n\n  â”œâ‘ *NÃºmero* : wa.me/${uang[i].id.replace('@s.whatsapp.net', '')}\n  â”œâ‘ *EquilÃ­brio*: _Rp${uang[i].uang}_\n  â””â‘ *Limite*: ${limitawal - _limit[i].limit}\n`
                                                 }
                                                 await reply(leaderboardlvl)
                                                 await reply(leaderboarduang)
@@ -3349,25 +3349,25 @@ async function starts() {
                                         }
 				        break
                                 case 'antipalavrao':
-                                case 'antipalavrão':
+                                case 'antipalavrÃ£o':
                                         if (!isGroup) return reply(mess.only.group)
                                         if (!isGroupAdmins) return reply(ind.admin())
                                         if (args.length < 1) return reply('Digite ativar para ativar')
                                         if (args[0] === 'ativar') {
-                                                if (isBadWord) return reply('*O recurso Anti Palavrão já estava ativo antes*')
+                                                if (isBadWord) return reply('*O recurso Anti PalavrÃ£o jÃ¡ estava ativo antes*')
                  	                        badword.push(from)
                  	                        fs.writeFileSync('./database/json/badword.json', JSON.stringify(badword))
-                  	                        reply(`*[ Sucesso ] ative o palavrão neste grupo!*`)
+                  	                        reply(`*[ Sucesso ] ative o palavrÃ£o neste grupo!*`)
                                         } else if (args[0] === 'desativar') {
                   	                        badword.splice(from, 1)
                  	                        fs.writeFileSync('./database/json/badword.json', JSON.stringify(badword))
-                 	                        reply(`palavrão é desativado`)
+                 	                        reply(`palavrÃ£o Ã© desativado`)
              	                        } else {
                  	                        reply(ind.satukos())
                 	                }
                                         break
                                 case 'addpalavrao':
-                                case 'addpalavrão':
+                                case 'addpalavrÃ£o':
                                         if (!isOwner) return reply(ind.ownerb())
                                         if (!isGroupAdmins) return reply(ind.admin())
                                         if (args.length < 1) return reply( `Kirim perintah ${prefix}addbadword [kata kasar]. contoh ${prefix}addbadword bego`)
@@ -3377,7 +3377,7 @@ async function starts() {
                                         reply('Success Menambahkan Bad Word!')
                                         break
                                 case 'delpalavrao':
-                                case 'delpalavrão':
+                                case 'delpalavrÃ£o':
                                         if (!isOwner) return reply(ind.ownerb())
                                         if (!isGroupAdmins) return reply(ind.admin())
                                         if (args.length < 1) return reply( `Kirim perintah ${prefix}addbadword [kata kasar]. contoh ${prefix}addbadword bego`)
@@ -3387,10 +3387,10 @@ async function starts() {
                                         reply('Success Menghapus BAD WORD!')
                                         break 
                                 case 'listpalavrao':
-                                case 'listapalavrão':
+                                case 'listapalavrÃ£o':
                                         let lbw = `Ini adalah list BAD WORD\nTotal : ${bad.length}\n`
                                         for (let i of bad) {
-                                                lbw += `➸ ${i.replace(bad)}\n`
+                                                lbw += `âž¸ ${i.replace(bad)}\n`
                                         }
                                         await reply(lbw)
                                         break 
